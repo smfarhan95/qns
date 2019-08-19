@@ -73,10 +73,7 @@ function sendNotificationToWaiting($currentNo,$roomID)
 	foreach ($result1 as $key1) {
 		++$loop_time;
 		$token = $key1['token'];
-		// $remaining = (int)$key1['queue_No']-(int)$currentNo;
-
-		// if ($remaining<=5 && $remaining>0) 
-		// {
+		
 		$estimated = $differ_time->i * $loop_time;
 			$serviceAccount = ServiceAccount::fromJsonFile(__DIR__.'/secret.json');
 		    $firebase = (new Factory)
@@ -95,7 +92,6 @@ function sendNotificationToWaiting($currentNo,$roomID)
 				} catch (Exception $e) {
 					echo "<script>console.log('Failed to send to ic')</script>";
 				}
-		// }
 	}
 }
 ?>
