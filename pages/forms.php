@@ -21,7 +21,6 @@ if(isset($_POST['submit'])){
         else
         {
             ?><script>alert("Success");</script><?php
-            //mysql_close($conn);
         }
     }
 }
