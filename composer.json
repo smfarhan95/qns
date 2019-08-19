@@ -1,0 +1,16 @@
+{
+    "name": "zarifulradzuan/quick-rest",
+    "description": "REST API for Quick implementing both MYSQL and Firebase RTD and FCM",
+    "type": "project",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Zariful H. Radzuan",
+            "email": "zariful.radzuan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "4.18"
+    }
+}
