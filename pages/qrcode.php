@@ -12,9 +12,9 @@
     $res = mysqli_query($link,$sql);
     $count = mysqli_num_rows($res);
 
-    // $tempCheck = "select * from temp";
-    // $checkRes = mysqli_query($link,$tempCheck);
-    // $tempCount = mysqli_num_rows($checkRes);
+     $tempCheck = "select * from temp";
+     $checkRes = mysqli_query($link,$tempCheck);
+     $tempCount = mysqli_num_rows($checkRes);
 
     if ($count==0) {
         ?><script>alert("Patient is not registered!");</script><?php
@@ -81,62 +81,3 @@
         
     }
 ?>
-<!-- <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Healthcare Queue System</title>
-
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/qrcode.js"></script>
-    <style type="text/css" media="print">
-        button{
-            visibility: hidden;
-        }
-    </style> -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-<!-- </head>
-
-<body>
-    <input type="text" id="text" value="<?php echo $no; ?>" hidden>
-    <div id="qrcode" style="width:400px; height:400px; margin: auto;"></div>
-    <h1 style="text-align: center;"><?php echo $no; ?></h1>
-    <button onclick="back()">Back</button>
-
-    <script type="text/javascript">
-    var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width : 400,
-        height : 400
-    });
-
-    function makeCode () {      
-        var elText = document.getElementById("text");
-        
-        if (!elText.value) {
-            alert("Input a text");
-            elText.focus();
-            return;
-        }
-        
-        qrcode.makeCode(elText.value);
-    }
-
-    makeCode();
-
-    function back() {
-        window.location.href = "queue.php";
-    }
-
-    </script>
-</body> -->
