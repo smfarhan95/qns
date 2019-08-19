@@ -12,10 +12,6 @@
     $res = mysqli_query($link,$sql);
     $count = mysqli_num_rows($res);
 
-     $tempCheck = "select * from temp";
-     $checkRes = mysqli_query($link,$tempCheck);
-     $tempCount = mysqli_num_rows($checkRes);
-
     if ($count==0) {
         ?><script>alert("Patient is not registered!");</script><?php
         header("Location: queue.php");
