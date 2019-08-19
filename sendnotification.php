@@ -26,7 +26,6 @@ function sendNotificationToCurrent($ic)
         ->withServiceAccount($serviceAccount)
         ->create();
 	
-	//$token = "cUfUK9uVGZc:APA91bFYFIcTJLJDT8mBggtwvl6pw1Gc3GgA1cl4zAhuSGHN6aswo6yY9SgAZSSxNQekwT-ickVU0oevevapm-X0zdb-3enWAm5Dzl3MDO7y4Xsrr7FDX13NB82pkpCW1-K8Ydtf7C_Z";
 	$notification = Notification::fromArray([
 		'title' => "Your number was called!!",
 		'body' => "Please go to room."
