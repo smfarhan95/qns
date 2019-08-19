@@ -28,7 +28,6 @@ if(isset($_POST['submit'])){
         {
             ?><script>alert("Success");</script><?php
             header("Refresh:0");
-            //mysql_close($conn);
         }
     }
 }
