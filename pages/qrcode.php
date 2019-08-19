@@ -2,7 +2,6 @@
 <html lang="en">
 <?php
     include_once'../dbcon.php';
-    // session_start();
 
     $icno = $_POST['ic'];
     $room = $_POST['room'];
